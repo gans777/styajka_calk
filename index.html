@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+	<title>Калькулятор расчета расхода материалов для цементной стяжки.</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" href="style.css?rnd=111">
+</head>
+<body>
+    
+ 
+	<div class="wrap_calk">
+	<form >
+          <div class="wrap_h_styaj">
+	<label for="h_styaj">средняя толщина стяжки h=</label> <input type="text" name="h_styaj" id="h_styaj" value=5><label for="h_styaj">см </label><div class="wrap_slider_for_h_styaj"><div id="slider_h"></div></div>
+         </div><!--end wrap_h_styaj-->
+            <div class="wrap_s_styaj">
+	<label for="s_styaj">прощадь стяжки S=</label><input type="text" name="s_styaj" id="s_styaj" value=0><label for="s_styaj">m2</label>
+     <div class="wrap_slider_for_s_styaj"><div id="slider_s"></div></div>
+           </div><!--end wrap_s_styaj-->
+
+           <div class="wrap_btn">
+	<button type="button" class="btn btn-secondary">считать расход</button>
+            </div><!--edn wrap_btn-->
+     </form>
+     
+    
+     <div class="otvet">
+          <div class="alert_height"> <p>Не рекомендуется делать стяжку тоньше пяти сантиметров - может плохо прилипнуть!!!</p>    </div>
+           <div>
+          <i>примерный объем мешка цемента весом 50кг = 30 литров</i>
+     </div>
+      <ol>
+     	<li>цемента <span id="cement">0</span> мешков по 50кг </li>
+     	<li>объем песка <span id="pesok">0</span>m3</li>
+     	<li>объем щебня или керамзита <span id="keramzit">0</span>m3</li>
+      </ol>
+
+     </div><!-- end class otvet-->
+     </div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="calk.js"></script>
+</body>
+</html>
